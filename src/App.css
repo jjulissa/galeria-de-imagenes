@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+.header { 
+    color: tomato; 
+    text-align: center; 
+    font-size: 30px;
+} 
+
+.footer { 
+    text-align: right; 
+    color: tomato; 
+    font-size: 25px;
+    margin: 5% 2%;
+} 
+
+.mainOne { 
+    margin: 6%; 
+
+} 
+
+#select { 
+    padding: 10%; 
+    border-radius: 5px; 
+    border-color: tomato; 
+    font-size: 25px;
+} 
+
+.buscar { 
+    
+    display: flex; 
+    gap: 5%; 
+    justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.buscar input { 
+    width: 70%;
+    padding: 2%; 
+    border-radius: 10px; 
+    font-size: 20px; 
+    border-color: tomato;
+} 
+
+.buscar button { 
+    padding: 2%; 
+    border-radius: 10px; 
+    font-size: 25px; 
+    background-color: tomato; 
+    color: aliceblue; 
+    border:teal solid 3px;
+} 
+
+.container { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 2%; 
+    justify-content: center; 
+    align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+@media (max-width: 1000px) {
+    .mainOne { 
+        flex-direction: column; 
+        align-items: center; 
+    } 
+
+    #select { 
+        margin-bottom: 15%;
+    }
 }
